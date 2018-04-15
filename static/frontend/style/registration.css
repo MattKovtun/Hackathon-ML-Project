@@ -1,0 +1,115 @@
+@keyframes fade-out {
+    0% {
+
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+.Registration {font-family: "PT Serif", sans-serif;}
+
+.Registration__container {
+    position: relative;
+    margin: auto;
+    background: #eee;
+    width: 640px;
+    max-width: 100%;
+}
+
+.Registration__video {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.Registration__canvas {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 1;
+
+    object-fit: contain;
+    max-width: 100%;
+}
+.Registration__canvas_submit {
+    opacity: 1;
+    animation-name: fade-out;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.Registration__svg {
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.Registration__label {
+    display: block;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 0.7rem;
+    margin: 0.2em;
+}
+
+.Registration__input {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    border: none;
+    border-bottom: 1px dashed #ccc !important;
+    font-family: Pt Serif, serif;
+    padding: 0.1em 0.5em;
+    margin: auto auto 0.4em;
+    width: 18rem;
+    max-width: 100%;
+}
+
+.Registration__submit {
+    display: block;
+    text-align: center;
+    margin: 0.7em auto;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0.5em 2em;
+    box-shadow: 1px 1px 1px -1px black;
+
+}
+.Registration__textarea {
+    margin: auto;
+    display: block;
+    resize: none;
+    width: 18rem;
+    height: 10rem;
+    text-align: center;
+    font-family: Pt Serif, serif;
+    border: 1px dashed #ccc;
+    padding: 0.3em;
+    font-size: 0.9rem;
+    max-width: 100%;
+}
+
+.Registration__section {
+    margin: 0.2em;
+}
